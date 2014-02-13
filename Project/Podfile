@@ -1,0 +1,13 @@
+
+platform :ios, "5.0"
+
+target "NNMinimalHUD" do
+
+pod 'NNMinimalHUD', :path => '..'
+
+end
+
+target "NNMinimalHUDTests" do
+
+end
+
