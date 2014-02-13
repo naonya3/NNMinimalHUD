@@ -8,6 +8,7 @@
 
 #import "NNViewController.h"
 #import <NNMinimalHUD/NNMinimalHUD.h>
+#import <FXBlurView/FXBlurView.h>
 
 @interface NNViewController ()
 
@@ -108,6 +109,30 @@
     }
     
     
+}
+
+- (IBAction)_didTouchBlurButton:(id)sender
+{
+    // Custom Background Color!!
+    [NNMinimalHUD setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.4]];
+    
+    // Custom Background View
+//    FXBlurView *backgroundView = [[FXBlurView alloc] init];
+//    backgroundView.blurRadius = 10;
+//    backgroundView.underlyingView = [[UIApplication sharedApplication] keyWindow];
+//    [NNMinimalHUD setBackgroundView:backgroundView];
+    [NNMinimalHUD setBackgroundView:nil];
+    // Custom Background of HUD
+    FXBlurView *hudBackground = [[FXBlurView alloc] init];
+    hudBackground.layer.cornerRadius = 10;
+    hudBackground.blurRadius = 20;
+    hudBackground.underlyingView = [[UIApplication sharedApplication] keyWindow];
+    [NNMinimalHUD setHUDBackgroundView:hudBackground];
+    
+    UIActivityIndicatorView *ind = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [ind sizeToFit];
+    [ind startAnimating];
+    [NNMinimalHUD showWithContentsView:ind duration:2];
 }
 
 @end

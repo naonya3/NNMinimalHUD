@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753B858C18AD4396007AE1E6 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 753B858B18AD4396007AE1E6 /* back.png */; };
+		753B858E18AD4566007AE1E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 753B858D18AD4566007AE1E6 /* Default-568h@2x.png */; };
 		871FEB6D18AC7548008879DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871FEB6C18AC7548008879DE /* Foundation.framework */; };
 		871FEB6F18AC7548008879DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871FEB6E18AC7548008879DE /* CoreGraphics.framework */; };
 		871FEB7118AC7548008879DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871FEB7018AC7548008879DE /* UIKit.framework */; };
 		871FEB7718AC7548008879DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 871FEB7518AC7548008879DE /* InfoPlist.strings */; };
 		871FEB7918AC7548008879DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 871FEB7818AC7548008879DE /* main.m */; };
 		871FEB7D18AC7548008879DE /* NNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 871FEB7C18AC7548008879DE /* NNAppDelegate.m */; };
-		871FEB7F18AC7548008879DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 871FEB7E18AC7548008879DE /* Images.xcassets */; };
 		871FEB8618AC7548008879DE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871FEB8518AC7548008879DE /* XCTest.framework */; };
 		871FEB8718AC7548008879DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871FEB6C18AC7548008879DE /* Foundation.framework */; };
 		871FEB8818AC7548008879DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871FEB7018AC7548008879DE /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		0213D1548F324053A09A8816 /* Pods-NNMinimalHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNMinimalHUD.xcconfig"; path = "Pods/Pods-NNMinimalHUD.xcconfig"; sourceTree = "<group>"; };
+		753B858B18AD4396007AE1E6 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		753B858D18AD4566007AE1E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7EDD9CFEFDDB4690ADBF94CD /* libPods-NNMinimalHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNMinimalHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		871FEB6918AC7548008879DE /* NNMinimalHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNMinimalHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		871FEB6C18AC7548008879DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,7 +50,6 @@
 		871FEB7A18AC7548008879DE /* NNMinimalHUD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NNMinimalHUD-Prefix.pch"; sourceTree = "<group>"; };
 		871FEB7B18AC7548008879DE /* NNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNAppDelegate.h; sourceTree = "<group>"; };
 		871FEB7C18AC7548008879DE /* NNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNAppDelegate.m; sourceTree = "<group>"; };
-		871FEB7E18AC7548008879DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		871FEB8418AC7548008879DE /* NNMinimalHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNMinimalHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		871FEB8518AC7548008879DE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		871FEB8D18AC7548008879DE /* NNMinimalHUDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NNMinimalHUDTests-Info.plist"; sourceTree = "<group>"; };
@@ -118,9 +120,10 @@
 		871FEB7218AC7548008879DE /* NNMinimalHUD */ = {
 			isa = PBXGroup;
 			children = (
+				753B858B18AD4396007AE1E6 /* back.png */,
+				753B858D18AD4566007AE1E6 /* Default-568h@2x.png */,
 				871FEB7B18AC7548008879DE /* NNAppDelegate.h */,
 				871FEB7C18AC7548008879DE /* NNAppDelegate.m */,
-				871FEB7E18AC7548008879DE /* Images.xcassets */,
 				871FEB7318AC7548008879DE /* Supporting Files */,
 				874440AD18ACCEC70047CE4F /* NNViewController.h */,
 				874440AE18ACCEC70047CE4F /* NNViewController.m */,
@@ -238,7 +241,8 @@
 			files = (
 				871FEB7718AC7548008879DE /* InfoPlist.strings in Resources */,
 				874440B118ACCEC70047CE4F /* NNViewController.xib in Resources */,
-				871FEB7F18AC7548008879DE /* Images.xcassets in Resources */,
+				753B858E18AD4566007AE1E6 /* Default-568h@2x.png in Resources */,
+				753B858C18AD4396007AE1E6 /* back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NNMinimalHUD/NNMinimalHUD-Prefix.pch";
 				INFOPLIST_FILE = "NNMinimalHUD/NNMinimalHUD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -430,7 +434,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NNMinimalHUD/NNMinimalHUD-Prefix.pch";
 				INFOPLIST_FILE = "NNMinimalHUD/NNMinimalHUD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
