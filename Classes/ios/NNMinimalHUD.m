@@ -255,7 +255,7 @@ static UIWindow *_HUDWindow;
         if (_HUDWindow) {
             [_HUDWindow removeFromSuperview];
             _HUDWindow = nil;
-            [_originalWindow makeKeyAndVisible];
+            [_originalWindow makeKeyWindow];
             _originalWindow = nil;
         } else {
             [_showedHUD removeFromSuperview];
