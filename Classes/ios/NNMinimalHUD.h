@@ -41,4 +41,6 @@
 + (void)dismissWithContentsView:(UIView *)contentsView;
 + (void)dismissWithContentsView:(UIView *)contentsView duration:(NSTimeInterval)duration;
 
++ (NNMinimalHUD*)showedHUD;
+
 @end
