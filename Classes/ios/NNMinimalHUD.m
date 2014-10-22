@@ -276,4 +276,9 @@ static UIWindow *_HUDWindow;
     } completion:completionBlock];
 }
 
++ (NNMinimalHUD*)showedHUD
+{
+    return _showedHUD;
+}
+
 @end
